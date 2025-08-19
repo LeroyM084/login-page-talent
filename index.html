@@ -1,53 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image + Vidéo Overlay</title>
-<style>
-    html, body {
-        margin: 0;
-        height: 100%;
-    }
-
-    /* Image plein écran */
-    body {
-        background: url('visuel.jpg.jpg') no-repeat center center;
-        background-size: contain;
-        position: relative;
-        overflow: hidden;
-    }
-
-    /* Conteneur vidéo */
-    .video-overlay {
-        position: absolute;
-        top: 46%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%; /* Ajuste la taille de la vidéo */
-        height: 36%;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        border-radius: 12px;
-        overflow: hidden;
-    }
-
-    .video-overlay iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page Talent</title>
 </head>
 <body>
-
-<div class="video-overlay">
-    <iframe 
+    <img src="logo_myconnecteam.png" alt="Logo MyConnecTeam">
+    <div id="rappel">
+        <p>Rappel identifiant</p>
+        <p>prénom.nom@societe.fr.talent</p>
+    </div>
+    <img src="icon_megaphone.png" alt="Icone mégaphone">
+    <img src="img_laptop.png" alt="Image d'un ordinateur portable">
+<iframe 
         src="https://www.youtube.com/embed/0fGNGhqMZ6A?autoplay=1&mute=1&loop=1&playlist=0fGNGhqMZ6A" 
         title="YouTube video player" 
         allow="autoplay; encrypted-media" 
         allowfullscreen>
-    </iframe>
-</div>
-
+    </iframe>    <h1>Le Talent c'est vous ! Bienvenue</h1>
+    <div id='help'>
+        <p>En cours de recrutement ? Des problèmes de connexion ?</p>
+        <p>Cliquez <a href="https://portfolio.mleroy.fr">ICI</a>.</p>
+    </div>
 </body>
 </html>
