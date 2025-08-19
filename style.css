@@ -14,7 +14,7 @@ body {
     height: 100%;
     aspect-ratio: 1/1; /* force ratio carré basé sur la largeur */
 
-    background-color: #009688;
+    background-color: #008a80;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: relative; /* Essentiel pour le positionnement des enfants */
