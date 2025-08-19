@@ -11,10 +11,8 @@ html {
 
 body {
     /* MODIFIÉ : largeur 100% ; hauteur calculée pour garder un carré */
-    width: 100%;
-    max-width: 900px; /* limite sur très grands écrans */
+    height: 100%;
     aspect-ratio: 1/1; /* force ratio carré basé sur la largeur */
-    height: auto;
 
     background-color: #009688;
     font-family: Arial, Helvetica, sans-serif;
