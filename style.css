@@ -11,7 +11,7 @@ html {
 
 body {
     /* MODIFIÉ : largeur 100% ; hauteur calculée pour garder un carré */
-    height: 100%;
+    width: 100%;
     aspect-ratio: 1/1; /* force ratio carré basé sur la largeur */
 
     /* background-color: #008a80; */
