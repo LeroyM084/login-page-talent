@@ -14,7 +14,9 @@ body {
     height: 100%;
     aspect-ratio: 1/1; /* force ratio carré basé sur la largeur */
 
-    background-color: #008a80;
+    /* background-color: #008a80; */
+    background : linear-gradient( 90deg, #154247 0%, #0B6664 20%, #008a80 100%);
+
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: relative; /* Essentiel pour le positionnement des enfants */
@@ -63,22 +65,23 @@ img[src="icon_megaphone.png"] {
 
 img[src="img_laptop.png"] {
     position: absolute;
-    top: 48%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%; /* L'ordinateur prend plus de place dans le carré */
+    width: 90%; /* L'ordinateur prend plus de place dans le carré */
+    height: 43%;
     z-index: 1;
 }
 
 iframe {
     position: absolute;
-    top: 46%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    border-radius : 4px;
     /* MODIFIÉ : L'aspect ratio est recalculé pour l'écran de l'ordinateur */
-    width: 41%; /* Ajusté à la nouvelle taille de l'image du laptop */
-    height: 25%; /* Hauteur ajustée pour un ratio ~16:9 */
+    width: 53%; /* Ajusté à la nouvelle taille de l'image du laptop */
+    height: 30%; /* Hauteur ajustée pour un ratio ~16:9 */
 
     border: none;
     z-index: 2;
@@ -89,14 +92,15 @@ iframe {
 
 h1 {
     position: absolute;
+    border-radius : 8px;
     /* MODIFIÉ : Remonté pour un meilleur équilibre */
-    top: 72%;
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
     color: black;
-    padding: 1.5vmin 4vmin; /* Padding responsive */
-    font-size: 3vmin; /* Police responsive */
+    padding: 2vmin 5vmin; /* Padding responsive augmenté */
+    font-size: 4.5vmin; /* Police responsive agrandie */
     text-align: center;
     white-space: nowrap;
 }
@@ -108,7 +112,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 1.5vmin; /* Police responsive */
+    font-size: 2vmin; /* Police responsive */
     line-height: 1.5;
     width: 90%; /* Prend presque toute la largeur pour éviter les retours à la ligne */
 }
