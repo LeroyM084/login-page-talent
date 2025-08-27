@@ -2,6 +2,8 @@
 html {
     width: 100%;
     height: 100%;
+    background : linear-gradient( 90deg, #154247 0%, #0B6664 20%, #008a80 100%);
+
     /* NOUVEAU : Centrer le body (qui sera notre carré) dans la page */
     display: flex;
     justify-content: center;
@@ -15,7 +17,6 @@ body {
     aspect-ratio: 1/1; /* force ratio carré basé sur la largeur */
 
     /* background-color: #008a80; */
-    background : linear-gradient( 90deg, #154247 0%, #0B6664 20%, #008a80 100%);
 
     font-family: Arial, Helvetica, sans-serif;
     color: white;
