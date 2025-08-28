@@ -17,7 +17,7 @@ html {
 
 body {
     /* MODIFIÉ : largeur 100% ; hauteur calculée pour garder un carré */
-    width: 100%;
+    width: 90%;
     aspect-ratio: 1/1; /* force ratio carré basé sur la largeur */
 
     /* background-color: #008a80; */
@@ -42,7 +42,7 @@ img[src="logo_myconnecteam.png"] {
 
 #rappel {
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #e9ecef;
@@ -62,7 +62,7 @@ img[src="logo_myconnecteam.png"] {
 img[src="icon_megaphone.png"] {
     position: absolute;
     transform: rotate(15deg) scaleX(-1); /* Rotation + effet miroir horizontal */
-    bottom: 15%;
+    bottom: 17%;
     left: 20%;
     width: 14%; /* Taille relative */
     z-index: 3; /* Pour passer devant le rappel */
@@ -72,6 +72,7 @@ img[src="icon_megaphone.png"] {
 /* --- Contenu Central : Ordinateur et Vidéo --- */
 
 img[src="img_laptop.png"] {
+    display : none;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -83,14 +84,13 @@ img[src="img_laptop.png"] {
 
 iframe {
     position: absolute;
-    top: 42.5%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius : 8px;
     /* MODIFIÉ : L'aspect ratio est recalculé pour l'écran de l'ordinateur */
     width: 77%; /* Ajusté à la nouvelle taille de l'image du laptop */
-    height: 42%; /* Hauteur ajustée pour un ratio ~16:9 */
-
+    aspect-ratio: 16/9;
     border: none;
     z-index: 2;
 }
